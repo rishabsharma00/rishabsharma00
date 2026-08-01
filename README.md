@@ -1,27 +1,273 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-dark.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
-<style>
-  body { background:#0d1117; margin:0; padding:0; }
-  .markdown-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-    background:#0d1117;
-  }
-</style>
-</head>
-<body>
-<article class="markdown-body" id="content">Loading preview…</article>
-<script>
-const b64 = "PGRpdiBhbGlnbj0iY2VudGVyIj4KCjxpbWcgc3JjPSJodHRwczovL2NhcHN1bGUtcmVuZGVyLnZlcmNlbC5hcHAvYXBpP3R5cGU9d2F2aW5nJmNvbG9yPTA6MEYwNTI0LDUwOjJFMDg1NCwxMDA6NUIyMUI2JmhlaWdodD0yMjAmc2VjdGlvbj1oZWFkZXImdGV4dD1SSVNIQUIlMjBTSEFSTUEmZm9udFNpemU9NDgmZm9udENvbG9yPUU5RDhGRCZhbmltYXRpb249ZmFkZUluJmZvbnRBbGlnblk9MzgmZGVzYz1XZWIlMjBEZXZlbG9wZXIlMjAlN0MlMjBQSFAlMjAlQzIlQjclMjBXb3JkUHJlc3MlMjAlQzIlQjclMjBTaG9waWZ5JTIwJUMyJUI3JTIwT3BlbkNhcnQlMjAlQzIlQjclMjBBV1MmZGVzY0FsaWduWT01OCZkZXNjU2l6ZT0xOCIgd2lkdGg9IjEwMCUiLz4KCjxhIGhyZWY9Imh0dHBzOi8vZ2l0aHViLmNvbS9yaXNoYWJzaGFybWEwMCI+CiAgPGltZyBzcmM9Imh0dHBzOi8vcmVhZG1lLXR5cGluZy1zdmcuZGVtb2xhYi5jb20vP2ZvbnQ9RmlyYStDb2RlJndlaWdodD02MDAmc2l6ZT0yNiZkdXJhdGlvbj0zMDAwJnBhdXNlPTkwMCZjb2xvcj1BNzhCRkEmY2VudGVyPXRydWUmdkNlbnRlcj10cnVlJm11bHRpbGluZT10cnVlJnJlcGVhdD10cnVlJndpZHRoPTc2MCZoZWlnaHQ9OTAmbGluZXM9RnVsbCtTdGFjaytQSFArJTI2K1dvcmRQcmVzcytFbmdpbmVlcjtTaG9waWZ5KyUyQitPcGVuQ2FydCtlQ29tbWVyY2UrU3BlY2lhbGlzdDtBV1MrQ2xvdWQrJTI2K0RlcGxveW1lbnQrRW50aHVzaWFzdDtCdWlsZGluZytTY2FsYWJsZSUyQytSZWNydWl0ZXItUmVhZHkrUHJvZHVjdHMiIGFsdD0iVHlwaW5nIFNWRyIgLz4KPC9hPgoKPGJyLz4KCjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0xvY2F0aW9uLUluZGlhLTVCMjFCNj9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289Z29vZ2xlbWFwcyZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPgo8aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9PcGVuJTIwVG8tV29yay03QzNBRUQ/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWJyaWVmY2FzZSZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPgoKPGJyLz48YnIvPgoKPGEgaHJlZj0iIyI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvUG9ydGZvbGlvLTZEMjhEOT9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289dmVyY2VsJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+PC9hPgo8YSBocmVmPSIjIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9MaW5rZWRJbi02RDI4RDk/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWxpbmtlZGluJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+PC9hPgo8YSBocmVmPSJtYWlsdG86eW91ci5lbWFpbEBleGFtcGxlLmNvbSI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvRW1haWwtNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1nbWFpbCZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPjwvYT4KPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL3Jpc2hhYnNoYXJtYTAwIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9HaXRIdWItNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1naXRodWImbG9nb0NvbG9yPUU5RDhGRCZsYWJlbENvbG9yPTBGMDUyNCIgLz48L2E+Cgo8YnIvPjxici8+Cgo8aW1nIHNyYz0iaHR0cHM6Ly9rb21hcmV2LmNvbS9naHB2Yy8/dXNlcm5hbWU9cmlzaGFic2hhcm1hMDAmc3R5bGU9Zm9yLXRoZS1iYWRnZSZjb2xvcj03YzNhZWQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2dpdGh1Yi9mb2xsb3dlcnMvcmlzaGFic2hhcm1hMDA/c3R5bGU9Zm9yLXRoZS1iYWRnZSZjb2xvcj03YzNhZWQmbGFiZWxDb2xvcj0wRjA1MjQmbG9nbz1naXRodWImbGFiZWw9Rm9sbG93ZXJzIiAvPgo8aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9naXRodWIvc3RhcnMvcmlzaGFic2hhcm1hMDA/c3R5bGU9Zm9yLXRoZS1iYWRnZSZjb2xvcj03YzNhZWQmbGFiZWxDb2xvcj0wRjA1MjQmbG9nbz1naXRodWImbGFiZWw9U3RhcnMiIC8+Cgo8L2Rpdj4KCjxici8+CgotLS0KCiMjIPCfn6MgQWJvdXQgTWUKCmBgYApjb25zdCByaXNoYWIgPSB7CiAgICByb2xlOiAiV2ViIERldmVsb3BlciIsCiAgICBzdGFjazogWyJQSFAiLCAiV29yZFByZXNzIiwgIlNob3BpZnkiLCAiT3BlbkNhcnQiLCAiQVdTIl0sCiAgICBmb2N1czogIkJ1aWxkaW5nIGZhc3QsIHNlY3VyZSwgc2NhbGFibGUgd2ViICYgZUNvbW1lcmNlIHByb2R1Y3RzIiwKICAgIG1pbmRzZXQ6ICJTaGlwIGNsZWFuIGNvZGUsIGF1dG9tYXRlIHRoZSBib3JpbmcgcGFydHMsIGRlcGxveSB3aXRoIGNvbmZpZGVuY2UiCn07CmBgYAoKSSdtIGEgKip3ZWIgZGV2ZWxvcGVyKiogZm9jdXNlZCBvbiBidWlsZGluZyByZWxpYWJsZSwgcHJvZHVjdGlvbi1yZWFkeSB3ZWJzaXRlcyBhbmQgZUNvbW1lcmNlIHBsYXRmb3Jtcy4gTXkgY29yZSBzdHJlbmd0aCBpcyAqKlBIUC1iYXNlZCBkZXZlbG9wbWVudCoqLCB3aXRoIGRlZXAgaGFuZHMtb24gZXhwZXJpZW5jZSBhY3Jvc3MgKipXb3JkUHJlc3MqKiwgKipTaG9waWZ5KiosIGFuZCAqKk9wZW5DYXJ0Kiog4oCUIGNvdmVyaW5nIGV2ZXJ5dGhpbmcgZnJvbSBjdXN0b20gdGhlbWVzIGFuZCBwbHVnaW5zIHRvIGZ1bGwgc3RvcmVmcm9udCBidWlsZHMsIHBlcmZvcm1hbmNlIHR1bmluZywgYW5kIG1pZ3JhdGlvbnMuIEkgcGFpciB0aGF0IHdpdGggKipBV1MqKiBmb3IgaG9zdGluZywgZGVwbG95bWVudCwgYW5kIGluZnJhc3RydWN0dXJlLCBzbyB0aGUgdGhpbmdzIEkgYnVpbGQgZG9uJ3QganVzdCB3b3JrIGxvY2FsbHkg4oCUIHRoZXkgcnVuIHJlbGlhYmx5IGluIHByb2R1Y3Rpb24uCgpJIGNhcmUgYWJvdXQgY2xlYW4sIG1haW50YWluYWJsZSBjb2RlLCBzZW5zaWJsZSBhdXRvbWF0aW9uLCBhbmQgbWFraW5nIHN1cmUgdGhlIHNpdGVzIEkgc2hpcCBhcmUgZmFzdCwgc2VjdXJlLCBhbmQgZWFzeSBmb3IgdGhlIG5leHQgZGV2ZWxvcGVyIChvZnRlbiBmdXR1cmUtbWUpIHRvIHdvcmsgd2l0aC4KCioqT3BlbiBUbzoqKgotIEZyZWVsYW5jZSAmIGZ1bGwtdGltZSBXZWIgRGV2ZWxvcGVyIHJvbGVzIChQSFAgLyBXb3JkUHJlc3MgLyBTaG9waWZ5IC8gT3BlbkNhcnQpCi0gZUNvbW1lcmNlIGJ1aWxkICYgbWlncmF0aW9uIHByb2plY3RzCi0gV29yZFByZXNzIHBsdWdpbiAmIHRoZW1lIGRldmVsb3BtZW50Ci0gQVdTLWJhc2VkIGRlcGxveW1lbnQgJiBob3N0aW5nIHN1cHBvcnQKLSBDb2xsYWJvcmF0aW5nIG9uIG9wZW4tc291cmNlIFdvcmRQcmVzcyB0b29saW5nCgotLS0KCiMjIPCfn6MgVGVjaCBTdGFjawoKKipMYW5ndWFnZXMqKgoKPGltZyBzcmM9Imh0dHBzOi8vc2tpbGxpY29ucy5kZXYvaWNvbnM/aT1waHAsanMsaHRtbCxjc3MsbXlzcWwmdGhlbWU9ZGFyayIgLz4KCioqQ29udGVudCAmIGVDb21tZXJjZSBQbGF0Zm9ybXMqKgoKPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvV29yZFByZXNzLTZEMjhEOT9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289d29yZHByZXNzJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1Nob3BpZnktNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1zaG9waWZ5JmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL09wZW5DYXJ0LTZEMjhEOT9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289b3BlbmNhcnQmbG9nb0NvbG9yPUU5RDhGRCZsYWJlbENvbG9yPTBGMDUyNCIgLz4KPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvV29vQ29tbWVyY2UtNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz13b29jb21tZXJjZSZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPgoKKipCYWNrZW5kICYgRGF0YWJhc2VzKioKCjxpbWcgc3JjPSJodHRwczovL3NraWxsaWNvbnMuZGV2L2ljb25zP2k9cGhwLG15c3FsLGFwYWNoZSxuZ2lueCZ0aGVtZT1kYXJrIiAvPgoKKipDbG91ZCwgRGV2T3BzICYgVG9vbGluZyoqCgo8aW1nIHNyYz0iaHR0cHM6Ly9za2lsbGljb25zLmRldi9pY29ucz9pPWF3cyxnaXQsZ2l0aHViLHZzY29kZSxsaW51eCxwb3N0bWFuJnRoZW1lPWRhcmsiIC8+CgotLS0KCiMjIPCfn6MgQ29yZSBFeHBlcnRpc2UKCjxkaXYgYWxpZ249ImNlbnRlciI+Cgp8IERvbWFpbiB8IFByb2ZpY2llbmN5IHwgRGV0YWlscyB8CnwtLS18LS0tfC0tLXwKfCBQSFAgRGV2ZWxvcG1lbnQgfCDirZDirZDirZDirZDirZAgfCBDdXN0b20gc2NyaXB0cywgYmFja2VuZCBsb2dpYywgcGx1Z2luICYgbW9kdWxlIGRldmVsb3BtZW50IHwKfCBXb3JkUHJlc3MgRW5naW5lZXJpbmcgfCDirZDirZDirZDirZDirZAgfCBDdXN0b20gdGhlbWVzLCBwbHVnaW4gZGV2ZWxvcG1lbnQsIEVsZW1lbnRvci9EaXZpLCBtZWRpYSAmIHBlcmZvcm1hbmNlIGNsZWFudXAgfAp8IFNob3BpZnkgRGV2ZWxvcG1lbnQgfCDirZDirZDirZDirZAgfCBMaXF1aWQgdGhlbWluZywgc3RvcmVmcm9udCBjdXN0b21pemF0aW9uLCBhcHAgaW50ZWdyYXRpb25zIHwKfCBPcGVuQ2FydCBEZXZlbG9wbWVudCB8IOKtkOKtkOKtkOKtkCB8IFN0b3JlIHNldHVwLCBleHRlbnNpb25zLCBjaGVja291dCAmIGNhdGFsb2cgY3VzdG9taXphdGlvbiB8CnwgQVdTICYgRGVwbG95bWVudCB8IOKtkOKtkOKtkOKtkCB8IEVDMiBob3N0aW5nLCBTMywgZGVwbG95bWVudCBwaXBlbGluZXMsIHNlcnZlciBjb25maWd1cmF0aW9uIHwKfCBTaXRlIFBlcmZvcm1hbmNlICYgQ2xlYW51cCB8IOKtkOKtkOKtkOKtkCB8IFVudXNlZCBtZWRpYS9hc3NldCBhdWRpdGluZywgZHJ5LXJ1biBzYWZlIGNsZWFudXAgdG9vbGluZywgREIgb3B0aW1pemF0aW9uIHwKCjwvZGl2PgoKLS0tCgojIyDwn5+jIEZlYXR1cmVkIFByb2plY3RzCgo8ZGV0YWlscz4KPHN1bW1hcnk+PGI+8J+nuSBVbnVzZWQgTWVkaWEgQ2xlYW5lciAoV29yZFByZXNzKTwvYj48L3N1bW1hcnk+Cjxici8+CgpTYWZlbHkgZmluZHMgYW5kIGRlbGV0ZXMgdW51c2VkIGltYWdlcyBmcm9tIHRoZSBXb3JkUHJlc3MgTWVkaWEgTGlicmFyeS4gRGVlcC1zY2FucyBwb3N0IGNvbnRlbnQsIGN1c3RvbSBmaWVsZHMsIEVsZW1lbnRvciwgRGl2aSwgYW5kIFNpdGUgSWRlbnRpdHkgc2V0dGluZ3MgYmVmb3JlIGZsYWdnaW5nIGFueSBmaWxlIOKAlCB3aXRoIGEgRHJ5IFJ1biBtb2RlIHNvIG5vdGhpbmcgaXMgZXZlciByZW1vdmVkIGJ5IGFjY2lkZW50LgoKfCBDYXRlZ29yeSB8IERldGFpbCB8CnwtLS18LS0tfAp8ICoqU3RhY2sqKiB8IFBIUCwgV29yZFByZXNzIFBsdWdpbiBBUEksIE15U1FMIHwKfCAqKlNjYWxlKiogfCBTY2FucyBmdWxsIE1lZGlhIExpYnJhcnkgYWNyb3NzIHBvc3RzLCBjdXN0b20gZmllbGRzICYgcGFnZSBidWlsZGVycyB8CnwgKipQZXJmb3JtYW5jZSoqIHwgRGVlcC1zY2FuIGZsYWdnaW5nIGVuZ2luZSB3aXRoIGJhdGNoLXNhZmUgcHJvY2Vzc2luZyB8CnwgKipTZWN1cml0eSoqIHwgRHJ5IFJ1biBtb2RlIHByZXZlbnRzIGRlc3RydWN0aXZlIGFjdGlvbnMgYnkgZGVmYXVsdCB8CnwgKipJbXBhY3QqKiB8IFJlY2xhaW1zIHN0b3JhZ2UgJiBrZWVwcyBNZWRpYSBMaWJyYXJ5IGNsZWFuIHdpdGhvdXQgbWFudWFsIGF1ZGl0aW5nIHwKfCAqKlJlcG9zaXRvcnkqKiB8IFtVbnVzZWQtbWVkaWEtY2xlYW5lcl0oaHR0cHM6Ly9naXRodWIuY29tL3Jpc2hhYnNoYXJtYTAwL1VudXNlZC1tZWRpYS1jbGVhbmVyKSB8CgpBIHByYWN0aWNhbCBXb3JkUHJlc3MgbWFpbnRlbmFuY2UgdG9vbCBidWlsdCB0byBzb2x2ZSBhIHJlYWwsIHJlY3VycmluZyBwcm9ibGVtOiBibG9hdGVkIG1lZGlhIGxpYnJhcmllcyBmdWxsIG9mIG9ycGhhbmVkIGltYWdlcy4gSW5zdGVhZCBvZiBhIG5haXZlICJkZWxldGUgYW55dGhpbmcgdW5hdHRhY2hlZCIgYXBwcm9hY2gsIGl0IGFjdGl2ZWx5IGNyb3NzLXJlZmVyZW5jZXMgRWxlbWVudG9yLCBEaXZpLCBhbmQgU2l0ZSBJZGVudGl0eSByZWZlcmVuY2VzIGJlZm9yZSBmbGFnZ2luZyBhIGZpbGUsIHRoZW4gZ2l2ZXMgdGhlIHNpdGUgb3duZXIgYSBzYWZlLCByZXZpZXdhYmxlIERyeSBSdW4gYmVmb3JlIGFueXRoaW5nIGlzIGRlbGV0ZWQuCgo8L2RldGFpbHM+Cgo8ZGV0YWlscz4KPHN1bW1hcnk+PGI+4piB77iPIEFXUyBSZXBvIChDbG91ZCAmIERlcGxveW1lbnQgVXRpbGl0aWVzKTwvYj48L3N1bW1hcnk+Cjxici8+CgpBIGNvbGxlY3Rpb24gb2YgQVdTLWZvY3VzZWQgdXRpbGl0aWVzIGFuZCBzY3JpcHRzIGZvciBob3N0aW5nLCBkZXBsb3ltZW50LCBhbmQgaW5mcmFzdHJ1Y3R1cmUgd29ya2Zsb3dzIHN1cHBvcnRpbmcgUEhQL1dvcmRQcmVzcy1iYXNlZCBwcm9qZWN0cy4KCnwgQ2F0ZWdvcnkgfCBEZXRhaWwgfAp8LS0tfC0tLXwKfCAqKlN0YWNrKiogfCBKYXZhU2NyaXB0LCBBV1MgfAp8ICoqU2NhbGUqKiB8IFV0aWxpdHkgc2NyaXB0cyBmb3IgZGVwbG95bWVudCAmIGNsb3VkIHJlc291cmNlIHdvcmtmbG93cyB8CnwgKipQZXJmb3JtYW5jZSoqIHwgU3RyZWFtbGluZXMgcmVwZXRpdGl2ZSBBV1Mgc2V0dXAgJiBkZXBsb3ltZW50IHRhc2tzIHwKfCAqKlNlY3VyaXR5KiogfCBGb2xsb3dzIEFXUyBiZXN0IHByYWN0aWNlcyBmb3IgY3JlZGVudGlhbHMgJiByZXNvdXJjZSBhY2Nlc3MgfAp8ICoqSW1wYWN0KiogfCBSZWR1Y2VzIG1hbnVhbCBkZXBsb3ltZW50IG92ZXJoZWFkIGZvciBob3N0ZWQgcHJvamVjdHMgfAp8ICoqUmVwb3NpdG9yeSoqIHwgW0FXUy1yZXBvXShodHRwczovL2dpdGh1Yi5jb20vcmlzaGFic2hhcm1hMDAvQVdTLXJlcG8pIHwKCkJ1aWx0IHRvIHN1cHBvcnQgdGhlIGRlcGxveW1lbnQgc2lkZSBvZiBjbGllbnQgYW5kIHBlcnNvbmFsIHByb2plY3RzIOKAlCBicmlkZ2luZyBsb2NhbCBQSFAvV29yZFByZXNzL1Nob3BpZnkvT3BlbkNhcnQgZGV2ZWxvcG1lbnQgd2l0aCBwcm9kdWN0aW9uLXJlYWR5IEFXUyBob3N0aW5nLgoKPC9kZXRhaWxzPgoKLS0tCgojIyDwn5+jIEV4cGVyaWVuY2UKCioqV2ViIERldmVsb3BlcioqCmBQSFAgwrcgV29yZFByZXNzIMK3IFNob3BpZnkgwrcgT3BlbkNhcnQgwrcgQVdTYAoKV29ya2luZyBhcyBhIHdlYiBkZXZlbG9wZXIgYnVpbGRpbmcgYW5kIG1haW50YWluaW5nIHdlYnNpdGVzIGFuZCBlQ29tbWVyY2Ugc3RvcmVzIGFjcm9zcyBXb3JkUHJlc3MsIFNob3BpZnksIGFuZCBPcGVuQ2FydCwgd2l0aCBBV1MgaGFuZGxpbmcgaG9zdGluZyBhbmQgZGVwbG95bWVudC4KCi0gRGV2ZWxvcGVkIGFuZCBjdXN0b21pemVkIFdvcmRQcmVzcyB0aGVtZXMgYW5kIHBsdWdpbnMgZm9yIGNsaWVudCBzaXRlcwotIEJ1aWx0IGFuZCBtYWludGFpbmVkIFNob3BpZnkgc3RvcmVmcm9udHMgd2l0aCBjdXN0b20gTGlxdWlkIHRoZW1pbmcKLSBDb25maWd1cmVkIGFuZCBleHRlbmRlZCBPcGVuQ2FydCBzdG9yZXMsIGluY2x1ZGluZyBjYXRhbG9nIGFuZCBjaGVja291dCBjdXN0b21pemF0aW9uCi0gRGVwbG95ZWQgYW5kIG1hbmFnZWQgc2l0ZXMgb24gQVdTIGluZnJhc3RydWN0dXJlCi0gUGVyZm9ybWVkIHNpdGUgcGVyZm9ybWFuY2UgYXVkaXRzIGFuZCBjbGVhbnVwIChtZWRpYSwgZGF0YWJhc2UsIGFzc2V0cykKCmBQSFBgIGBXb3JkUHJlc3NgIGBTaG9waWZ5YCBgT3BlbkNhcnRgIGBBV1NgIGBNeVNRTGAKCi0tLQoKIyMg8J+foyBBY2hpZXZlbWVudHMKCjxkaXYgYWxpZ249ImNlbnRlciI+Cgp8IFJlY29nbml0aW9uIHwgRGV0YWlscyB8CnwtLS18LS0tfAp8IFdvcmRQcmVzcyBNZWRpYSBDbGVhbnVwIFRvb2wgfCBCdWlsdCBhbmQgcHVibGlzaGVkIGEgcHVibGljIFdvcmRQcmVzcyBtYWludGVuYW5jZSB1dGlsaXR5IHwKfCBNdWx0aS1QbGF0Zm9ybSBlQ29tbWVyY2UgRGVsaXZlcnkgfCBEZWxpdmVyZWQgcHJvamVjdHMgYWNyb3NzIFNob3BpZnksIE9wZW5DYXJ0ICYgV29yZFByZXNzL1dvb0NvbW1lcmNlIHwKfCBDbG91ZC1EZXBsb3llZCBQcm9qZWN0cyB8IEhvc3RlZCBhbmQgZGVwbG95ZWQgcHJvZHVjdGlvbiBzaXRlcyB1c2luZyBBV1MgfAoKPC9kaXY+CgotLS0KCiMjIPCfn6MgQ2VydGlmaWNhdGlvbnMKCioqQVdTKioKCjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0FXUyUyMENlcnRpZmllZC0yMzJGM0U/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWFtYXpvbmF3cyZsb2dvQ29sb3I9RkY5OTAwIiAvPgoKKipPdGhlciBQcm92aWRlcnMqKgoKPGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvT3JhY2xlLTZEMjhEOT9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289b3JhY2xlJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+CjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL05QVEVMLTZEMjhEOT9zdHlsZT1mb3ItdGhlLWJhZGdlJmxvZ289Z29vZ2xlc2Nob2xhciZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPgo8aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9DaXNjby02RDI4RDk/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWNpc2NvJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+CgotLS0KCiMjIPCfn6MgQ29kaW5nIFByb2ZpbGVzCgo8cCBhbGlnbj0iY2VudGVyIj4KPGEgaHJlZj0iIyI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTGVldENvZGUtNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1sZWV0Y29kZSZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPjwvYT4KPGEgaHJlZj0iIyI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvR2Vla3Nmb3JHZWVrcy02RDI4RDk/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWdlZWtzZm9yZ2Vla3MmbG9nb0NvbG9yPUU5RDhGRCZsYWJlbENvbG9yPTBGMDUyNCIgLz48L2E+CjxhIGhyZWY9IiMiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL0hhY2tlclJhbmstNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1oYWNrZXJyYW5rJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+PC9hPgo8YSBocmVmPSIjIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9Db2RlQ2hlZi02RDI4RDk/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPWNvZGVjaGVmJmxvZ29Db2xvcj1FOUQ4RkQmbGFiZWxDb2xvcj0wRjA1MjQiIC8+PC9hPgo8L3A+CgotLS0KCiMjIPCfn6MgR2l0SHViIEFuYWx5dGljcwoKPGRpdiBhbGlnbj0iY2VudGVyIj4KCjxpbWcgc3JjPSJodHRwczovL2dpdGh1Yi1yZWFkbWUtc3RhdHMudmVyY2VsLmFwcC9hcGk/dXNlcm5hbWU9cmlzaGFic2hhcm1hMDAmc2hvd19pY29ucz10cnVlJnRoZW1lPXJhZGljYWwmaGlkZV9ib3JkZXI9dHJ1ZSZiZ19jb2xvcj0wRjA1MjQmdGl0bGVfY29sb3I9QTc4QkZBJmljb25fY29sb3I9QTc4QkZBJnRleHRfY29sb3I9RTlEOEZEIiB3aWR0aD0iNDklIiAvPgo8aW1nIHNyYz0iaHR0cHM6Ly9naXRodWItcmVhZG1lLXN0cmVhay1zdGF0cy5oZXJva3VhcHAuY29tLz91c2VyPXJpc2hhYnNoYXJtYTAwJnRoZW1lPXJhZGljYWwmaGlkZV9ib3JkZXI9dHJ1ZSZiYWNrZ3JvdW5kPTBGMDUyNCZzdHJva2U9QTc4QkZBJnJpbmc9N0MzQUVEJmZpcmU9QTc4QkZBJmN1cnJTdHJlYWtMYWJlbD1FOUQ4RkQiIHdpZHRoPSI0OSUiIC8+Cgo8YnIvPgoKPGltZyBzcmM9Imh0dHBzOi8vZ2l0aHViLXJlYWRtZS1zdGF0cy52ZXJjZWwuYXBwL2FwaS90b3AtbGFuZ3MvP3VzZXJuYW1lPXJpc2hhYnNoYXJtYTAwJmxheW91dD1jb21wYWN0JnRoZW1lPXJhZGljYWwmaGlkZV9ib3JkZXI9dHJ1ZSZiZ19jb2xvcj0wRjA1MjQmdGl0bGVfY29sb3I9QTc4QkZBJnRleHRfY29sb3I9RTlEOEZEIiB3aWR0aD0iNDklIiAvPgoKPC9kaXY+CgotLS0KCiMjIPCfn6MgR2l0SHViIFRyb3BoaWVzCgo8ZGl2IGFsaWduPSJjZW50ZXIiPgo8aW1nIHNyYz0iaHR0cHM6Ly9naXRodWItcHJvZmlsZS10cm9waHkudmVyY2VsLmFwcC8/dXNlcm5hbWU9cmlzaGFic2hhcm1hMDAmdGhlbWU9cmFkaWNhbCZuby1mcmFtZT10cnVlJm5vLWJnPXRydWUmbWFyZ2luLXc9OCZjb2x1bW49NyIgLz4KPC9kaXY+CgotLS0KCiMjIPCfn6MgQ29udHJpYnV0aW9uIEFjdGl2aXR5Cgo8ZGl2IGFsaWduPSJjZW50ZXIiPgo8aW1nIHNyYz0iaHR0cHM6Ly9naXRodWItcmVhZG1lLWFjdGl2aXR5LWdyYXBoLnZlcmNlbC5hcHAvZ3JhcGg/dXNlcm5hbWU9cmlzaGFic2hhcm1hMDAmdGhlbWU9cmVkaWNhbCZiZ19jb2xvcj0wRjA1MjQmY29sb3I9QTc4QkZBJmxpbmU9N0MzQUVEJnBvaW50PUU5RDhGRCZoaWRlX2JvcmRlcj10cnVlIiB3aWR0aD0iMTAwJSIgLz4KPC9kaXY+CgotLS0KCiMjIPCfn6MgQ29udHJpYnV0aW9uIFNuYWtlCgo8ZGl2IGFsaWduPSJjZW50ZXIiPgo8aW1nIHNyYz0iaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3Jpc2hhYnNoYXJtYTAwL3Jpc2hhYnNoYXJtYTAwL291dHB1dC9naXRodWItY29udHJpYnV0aW9uLWdyaWQtc25ha2UtZGFyay5zdmciIHdpZHRoPSIxMDAlIiAvPgo8L2Rpdj4KCj4gKlJlcXVpcmVzIHRoZSBbc25rXShodHRwczovL2dpdGh1Yi5jb20vUGxhdGFuZS9zbmspIEdpdEh1YiBBY3Rpb24gc2V0IHVwIG9uIGEgYHJpc2hhYnNoYXJtYTAwL3Jpc2hhYnNoYXJtYTAwYCBwcm9maWxlIHJlcG8gdG8gZ2VuZXJhdGUgdGhpcyBmaWxlLioKCi0tLQoKIyMg8J+foyBDdXJyZW50IEZvY3VzCgpgYGB5YW1sCmN1cnJlbnRfZm9jdXM6CiAgbGVhcm5pbmc6CiAgICAtIEFkdmFuY2VkIEFXUyBkZXBsb3ltZW50ICYgQ0kvQ0Qgd29ya2Zsb3dzCiAgICAtIE1vZGVybiBXb3JkUHJlc3MgZGV2ZWxvcG1lbnQgcHJhY3RpY2VzCiAgYnVpbGRpbmc6CiAgICAtIFdvcmRQcmVzcyBwbHVnaW5zICYgcGVyZm9ybWFuY2UgdG9vbHMKICAgIC0gU2hvcGlmeSAmIE9wZW5DYXJ0IHN0b3JlZnJvbnQgc29sdXRpb25zCiAgZXhwbG9yaW5nOgogICAgLSBIZWFkbGVzcyBXb3JkUHJlc3MgLyBXb29Db21tZXJjZQogICAgLSBTZXJ2ZXJsZXNzIGRlcGxveW1lbnQgb24gQVdTCiAgb3Blbl90bzoKICAgIC0gRnJlZWxhbmNlICYgY29udHJhY3Qgd2ViIGRldmVsb3BtZW50CiAgICAtIEZ1bGwtdGltZSBQSFAgLyBXb3JkUHJlc3MgLyBTaG9waWZ5IHJvbGVzCmBgYAoKLS0tCgojIyDwn5+jIENvbm5lY3QKCjxwIGFsaWduPSJjZW50ZXIiPgo8YSBocmVmPSJtYWlsdG86eW91ci5lbWFpbEBleGFtcGxlLmNvbSI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvR21haWwtNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1nbWFpbCZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPjwvYT4KPGEgaHJlZj0iIyI+PGltZyBzcmM9Imh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTGlua2VkSW4tNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1saW5rZWRpbiZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPjwvYT4KPGEgaHJlZj0iaHR0cHM6Ly9naXRodWIuY29tL3Jpc2hhYnNoYXJtYTAwIj48aW1nIHNyYz0iaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9HaXRIdWItNkQyOEQ5P3N0eWxlPWZvci10aGUtYmFkZ2UmbG9nbz1naXRodWImbG9nb0NvbG9yPUU5RDhGRCZsYWJlbENvbG9yPTBGMDUyNCIgLz48L2E+CjxhIGhyZWY9IiMiPjxpbWcgc3JjPSJodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1BvcnRmb2xpby02RDI4RDk/c3R5bGU9Zm9yLXRoZS1iYWRnZSZsb2dvPXZlcmNlbCZsb2dvQ29sb3I9RTlEOEZEJmxhYmVsQ29sb3I9MEYwNTI0IiAvPjwvYT4KPC9wPgoKLS0tCgo8ZGl2IGFsaWduPSJjZW50ZXIiPgoKKiJDbGVhbiBjb2RlLCByZWxpYWJsZSBkZXBsb3ltZW50cywgYW5kIHdlYnNpdGVzIHRoYXQganVzdCB3b3JrLiIqCgo8aW1nIHNyYz0iaHR0cHM6Ly9jYXBzdWxlLXJlbmRlci52ZXJjZWwuYXBwL2FwaT90eXBlPXdhdmluZyZjb2xvcj0wOjVCMjFCNiw1MDoyRTA4NTQsMTAwOjBGMDUyNCZoZWlnaHQ9MTIwJnNlY3Rpb249Zm9vdGVyIiB3aWR0aD0iMTAwJSIvPgoKPC9kaXY+Cg==";
-const md = decodeURIComponent(escape(atob(b64)));
-document.getElementById('content').innerHTML = marked.parse(md);
-</script>
-</body>
-</html>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F0524,50:2E0854,100:5B21B6&height=220&section=header&text=RISHAB%20SHARMA&fontSize=48&fontColor=E9D8FD&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%7C%20PHP%20%C2%B7%20WordPress%20%C2%B7%20Shopify%20%C2%B7%20OpenCart%20%C2%B7%20AWS&descAlignY=58&descSize=18" width="100%"/>
+
+<a href="https://github.com/rishabsharma00">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=26&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=760&height=90&lines=Full+Stack+PHP+%26+WordPress+Engineer;Shopify+%2B+OpenCart+eCommerce+Specialist;AWS+Cloud+%26+Deployment+Enthusiast;Building+Scalable%2C+Recruiter-Ready+Products" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Location-India-5B21B6?style=for-the-badge&logo=googlemaps&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/Open%20To-Work-7C3AED?style=for-the-badge&logo=briefcase&logoColor=E9D8FD&labelColor=0F0524" />
+
+<br/><br/>
+
+<a href="#"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="https://github.com/rishabsharma00"><img src="https://img.shields.io/badge/GitHub-6D28D9?style=for-the-badge&logo=github&logoColor=E9D8FD&labelColor=0F0524" /></a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=rishabsharma00&style=for-the-badge&color=7c3aed&labelColor=0F0524" />
+<img src="https://img.shields.io/github/followers/rishabsharma00?style=for-the-badge&color=7c3aed&labelColor=0F0524&logo=github&label=Followers" />
+<img src="https://img.shields.io/github/stars/rishabsharma00?style=for-the-badge&color=7c3aed&labelColor=0F0524&logo=github&label=Stars" />
+
+</div>
+
+<br/>
+
+---
+
+## 🟣 About Me
+
+```
+const rishab = {
+    role: "Web Developer",
+    stack: ["PHP", "WordPress", "Shopify", "OpenCart", "AWS"],
+    focus: "Building fast, secure, scalable web & eCommerce products",
+    mindset: "Ship clean code, automate the boring parts, deploy with confidence"
+};
+```
+
+I'm a **web developer** focused on building reliable, production-ready websites and eCommerce platforms. My core strength is **PHP-based development**, with deep hands-on experience across **WordPress**, **Shopify**, and **OpenCart** — covering everything from custom themes and plugins to full storefront builds, performance tuning, and migrations. I pair that with **AWS** for hosting, deployment, and infrastructure, so the things I build don't just work locally — they run reliably in production.
+
+I care about clean, maintainable code, sensible automation, and making sure the sites I ship are fast, secure, and easy for the next developer (often future-me) to work with.
+
+**Open To:**
+- Freelance & full-time Web Developer roles (PHP / WordPress / Shopify / OpenCart)
+- eCommerce build & migration projects
+- WordPress plugin & theme development
+- AWS-based deployment & hosting support
+- Collaborating on open-source WordPress tooling
+
+---
+
+## 🟣 Tech Stack
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=php,js,html,css,mysql&theme=dark" />
+
+**Content & eCommerce Platforms**
+
+<img src="https://img.shields.io/badge/WordPress-6D28D9?style=for-the-badge&logo=wordpress&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/Shopify-6D28D9?style=for-the-badge&logo=shopify&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/OpenCart-6D28D9?style=for-the-badge&logo=opencart&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/WooCommerce-6D28D9?style=for-the-badge&logo=woocommerce&logoColor=E9D8FD&labelColor=0F0524" />
+
+**Backend & Databases**
+
+<img src="https://skillicons.dev/icons?i=php,mysql,apache,nginx&theme=dark" />
+
+**Cloud, DevOps & Tooling**
+
+<img src="https://skillicons.dev/icons?i=aws,git,github,vscode,linux,postman&theme=dark" />
+
+---
+
+## 🟣 Core Expertise
+
+<div align="center">
+
+| Domain | Proficiency | Details |
+|---|---|---|
+| PHP Development | ⭐⭐⭐⭐⭐ | Custom scripts, backend logic, plugin & module development |
+| WordPress Engineering | ⭐⭐⭐⭐⭐ | Custom themes, plugin development, Elementor/Divi, media & performance cleanup |
+| Shopify Development | ⭐⭐⭐⭐ | Liquid theming, storefront customization, app integrations |
+| OpenCart Development | ⭐⭐⭐⭐ | Store setup, extensions, checkout & catalog customization |
+| AWS & Deployment | ⭐⭐⭐⭐ | EC2 hosting, S3, deployment pipelines, server configuration |
+| Site Performance & Cleanup | ⭐⭐⭐⭐ | Unused media/asset auditing, dry-run safe cleanup tooling, DB optimization |
+
+</div>
+
+---
+
+## 🟣 Featured Projects
+
+<details>
+<summary><b>🧹 Unused Media Cleaner (WordPress)</b></summary>
+<br/>
+
+Safely finds and deletes unused images from the WordPress Media Library. Deep-scans post content, custom fields, Elementor, Divi, and Site Identity settings before flagging any file — with a Dry Run mode so nothing is ever removed by accident.
+
+| Category | Detail |
+|---|---|
+| **Stack** | PHP, WordPress Plugin API, MySQL |
+| **Scale** | Scans full Media Library across posts, custom fields & page builders |
+| **Performance** | Deep-scan flagging engine with batch-safe processing |
+| **Security** | Dry Run mode prevents destructive actions by default |
+| **Impact** | Reclaims storage & keeps Media Library clean without manual auditing |
+| **Repository** | [Unused-media-cleaner](https://github.com/rishabsharma00/Unused-media-cleaner) |
+
+A practical WordPress maintenance tool built to solve a real, recurring problem: bloated media libraries full of orphaned images. Instead of a naive "delete anything unattached" approach, it actively cross-references Elementor, Divi, and Site Identity references before flagging a file, then gives the site owner a safe, reviewable Dry Run before anything is deleted.
+
+</details>
+
+<details>
+<summary><b>☁️ AWS Repo (Cloud & Deployment Utilities)</b></summary>
+<br/>
+
+A collection of AWS-focused utilities and scripts for hosting, deployment, and infrastructure workflows supporting PHP/WordPress-based projects.
+
+| Category | Detail |
+|---|---|
+| **Stack** | JavaScript, AWS |
+| **Scale** | Utility scripts for deployment & cloud resource workflows |
+| **Performance** | Streamlines repetitive AWS setup & deployment tasks |
+| **Security** | Follows AWS best practices for credentials & resource access |
+| **Impact** | Reduces manual deployment overhead for hosted projects |
+| **Repository** | [AWS-repo](https://github.com/rishabsharma00/AWS-repo) |
+
+Built to support the deployment side of client and personal projects — bridging local PHP/WordPress/Shopify/OpenCart development with production-ready AWS hosting.
+
+</details>
+
+---
+
+## 🟣 Experience
+
+**Web Developer**
+`PHP · WordPress · Shopify · OpenCart · AWS`
+
+Working as a web developer building and maintaining websites and eCommerce stores across WordPress, Shopify, and OpenCart, with AWS handling hosting and deployment.
+
+- Developed and customized WordPress themes and plugins for client sites
+- Built and maintained Shopify storefronts with custom Liquid theming
+- Configured and extended OpenCart stores, including catalog and checkout customization
+- Deployed and managed sites on AWS infrastructure
+- Performed site performance audits and cleanup (media, database, assets)
+
+`PHP` `WordPress` `Shopify` `OpenCart` `AWS` `MySQL`
+
+---
+
+## 🟣 Achievements
+
+<div align="center">
+
+| Recognition | Details |
+|---|---|
+| WordPress Media Cleanup Tool | Built and published a public WordPress maintenance utility |
+| Multi-Platform eCommerce Delivery | Delivered projects across Shopify, OpenCart & WordPress/WooCommerce |
+| Cloud-Deployed Projects | Hosted and deployed production sites using AWS |
+
+</div>
+
+---
+
+## 🟣 Certifications
+
+**AWS**
+
+<img src="https://img.shields.io/badge/AWS%20Certified-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900" />
+
+**Other Providers**
+
+<img src="https://img.shields.io/badge/Oracle-6D28D9?style=for-the-badge&logo=oracle&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/NPTEL-6D28D9?style=for-the-badge&logo=googlescholar&logoColor=E9D8FD&labelColor=0F0524" />
+<img src="https://img.shields.io/badge/Cisco-6D28D9?style=for-the-badge&logo=cisco&logoColor=E9D8FD&labelColor=0F0524" />
+
+---
+
+## 🟣 Coding Profiles
+
+<p align="center">
+<a href="#"><img src="https://img.shields.io/badge/LeetCode-6D28D9?style=for-the-badge&logo=leetcode&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/GeeksforGeeks-6D28D9?style=for-the-badge&logo=geeksforgeeks&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/HackerRank-6D28D9?style=for-the-badge&logo=hackerrank&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/CodeChef-6D28D9?style=for-the-badge&logo=codechef&logoColor=E9D8FD&labelColor=0F0524" /></a>
+</p>
+
+---
+
+## 🟣 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=rishabsharma00&show_icons=true&theme=radical&hide_border=true&bg_color=0F0524&title_color=A78BFA&icon_color=A78BFA&text_color=E9D8FD" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=rishabsharma00&theme=radical&hide_border=true&background=0F0524&stroke=A78BFA&ring=7C3AED&fire=A78BFA&currStreakLabel=E9D8FD" width="49%" />
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabsharma00&layout=compact&theme=radical&hide_border=true&bg_color=0F0524&title_color=A78BFA&text_color=E9D8FD" width="49%" />
+
+</div>
+
+---
+
+## 🟣 GitHub Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=rishabsharma00&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7" />
+</div>
+
+---
+
+## 🟣 Contribution Activity
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=rishabsharma00&theme=redical&bg_color=0F0524&color=A78BFA&line=7C3AED&point=E9D8FD&hide_border=true" width="100%" />
+</div>
+
+---
+
+## 🟣 Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/rishabsharma00/rishabsharma00/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+> *Requires the [snk](https://github.com/Platane/snk) GitHub Action set up on a `rishabsharma00/rishabsharma00` profile repo to generate this file.*
+
+---
+
+## 🟣 Current Focus
+
+```yaml
+current_focus:
+  learning:
+    - Advanced AWS deployment & CI/CD workflows
+    - Modern WordPress development practices
+  building:
+    - WordPress plugins & performance tools
+    - Shopify & OpenCart storefront solutions
+  exploring:
+    - Headless WordPress / WooCommerce
+    - Serverless deployment on AWS
+  open_to:
+    - Freelance & contract web development
+    - Full-time PHP / WordPress / Shopify roles
+```
+
+---
+
+## 🟣 Connect
+
+<p align="center">
+<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Gmail-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="https://github.com/rishabsharma00"><img src="https://img.shields.io/badge/GitHub-6D28D9?style=for-the-badge&logo=github&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="#"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=E9D8FD&labelColor=0F0524" /></a>
+</p>
+
+---
+
+<div align="center">
+
+*"Clean code, reliable deployments, and websites that just work."*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:5B21B6,50:2E0854,100:0F0524&height=120&section=footer" width="100%"/>
+
+</div>

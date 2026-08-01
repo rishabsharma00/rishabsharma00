@@ -13,9 +13,8 @@
 
 <br/><br/>
 
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=E9D8FD&labelColor=0F0524" /></a>
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
-<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="https://www.linkedin.com/in/rishab-sharma-68006420b?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="mailto:rishabsharma0321@gmail.com"><img src="https://img.shields.io/badge/Email-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
 <a href="https://github.com/rishabsharma00"><img src="https://img.shields.io/badge/GitHub-6D28D9?style=for-the-badge&logo=github&logoColor=E9D8FD&labelColor=0F0524" /></a>
 
 <br/><br/>
@@ -256,10 +255,9 @@ current_focus:
 ## 🟣 Connect
 
 <p align="center">
-<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Gmail-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="mailto:rishabsharma0321@gmail.com"><img src="https://img.shields.io/badge/Gmail-6D28D9?style=for-the-badge&logo=gmail&logoColor=E9D8FD&labelColor=0F0524" /></a>
+<a href="https://www.linkedin.com/in/rishab-sharma-68006420b?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><img src="https://img.shields.io/badge/LinkedIn-6D28D9?style=for-the-badge&logo=linkedin&logoColor=E9D8FD&labelColor=0F0524" /></a>
 <a href="https://github.com/rishabsharma00"><img src="https://img.shields.io/badge/GitHub-6D28D9?style=for-the-badge&logo=github&logoColor=E9D8FD&labelColor=0F0524" /></a>
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-6D28D9?style=for-the-badge&logo=vercel&logoColor=E9D8FD&labelColor=0F0524" /></a>
 </p>
 
 ---

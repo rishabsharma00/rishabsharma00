@@ -85,10 +85,10 @@ I care about clean, maintainable code, sensible automation, and making sure the 
 |---|---|---|
 | PHP Development | ⭐⭐⭐⭐⭐ | Custom scripts, backend logic, plugin & module development |
 | WordPress Engineering | ⭐⭐⭐⭐⭐ | Custom themes, plugin development, Elementor/Divi, media & performance cleanup |
-| Shopify Development | ⭐⭐⭐⭐ | Liquid theming, storefront customization, app integrations |
-| OpenCart Development | ⭐⭐⭐⭐ | Store setup, extensions, checkout & catalog customization |
-| AWS & Deployment | ⭐⭐⭐⭐ | EC2 hosting, S3, deployment pipelines, server configuration |
-| Site Performance & Cleanup | ⭐⭐⭐⭐ | Unused media/asset auditing, dry-run safe cleanup tooling, DB optimization |
+| Shopify Development | ⭐⭐⭐⭐⭐| Liquid theming, storefront customization, app integrations |
+| OpenCart Development | ⭐⭐⭐⭐⭐| Store setup, extensions, checkout & catalog customization |
+| AWS & Deployment | ⭐⭐⭐⭐⭐ | EC2 hosting, S3, deployment pipelines, server configuration |
+| Site Performance & Cleanup | ⭐⭐⭐⭐⭐| Unused media/asset auditing, dry-run safe cleanup tooling, DB optimization |
 
 </div>
 

@@ -3,10 +3,10 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F0524,50:2E0854,100:5B21B6&height=220&section=header&text=RISHAB%20SHARMA&fontSize=48&fontColor=E9D8FD&animation=fadeIn&fontAlignY=38&desc=Web%20Developer%20%7C%20PHP%20%C2%B7%20WordPress%20%C2%B7%20Shopify%20%C2%B7%20OpenCart%20%C2%B7%20AWS&descAlignY=58&descSize=18" width="100%"/>
 
 <a href="https://github.com/rishabsharma00">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=26&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=true&width=760&height=90&lines=Full+Stack+PHP+%26+WordPress+Engineer;Shopify+%2B+OpenCart+eCommerce+Specialist;AWS+Cloud+%26+Deployment+Enthusiast;Building+Scalable%2C+Recruiter-Ready+Products" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=760&height=45&lines=Full+Stack+PHP+%26+WordPress+Engineer;Shopify+%2B+OpenCart+eCommerce+Specialist;AWS+Cloud+%26+Deployment+Enthusiast;Building+Scalable%2C+Recruiter-Ready+Products" alt="Typing SVG" />
 </a>
 
-<br/>
+<br/><br/>
 
 <img src="https://img.shields.io/badge/Location-India-5B21B6?style=for-the-badge&logo=googlemaps&logoColor=E9D8FD&labelColor=0F0524" />
 <img src="https://img.shields.io/badge/Open%20To-Work-7C3AED?style=for-the-badge&logo=briefcase&logoColor=E9D8FD&labelColor=0F0524" />
@@ -85,10 +85,10 @@ I care about clean, maintainable code, sensible automation, and making sure the 
 |---|---|---|
 | PHP Development | ⭐⭐⭐⭐⭐ | Custom scripts, backend logic, plugin & module development |
 | WordPress Engineering | ⭐⭐⭐⭐⭐ | Custom themes, plugin development, Elementor/Divi, media & performance cleanup |
-| Shopify Development | ⭐⭐⭐⭐⭐| Liquid theming, storefront customization, app integrations |
-| OpenCart Development | ⭐⭐⭐⭐⭐| Store setup, extensions, checkout & catalog customization |
-| AWS & Deployment | ⭐⭐⭐⭐⭐ | EC2 hosting, S3, deployment pipelines, server configuration |
-| Site Performance & Cleanup | ⭐⭐⭐⭐⭐| Unused media/asset auditing, dry-run safe cleanup tooling, DB optimization |
+| Shopify Development | ⭐⭐⭐⭐ | Liquid theming, storefront customization, app integrations |
+| OpenCart Development | ⭐⭐⭐⭐ | Store setup, extensions, checkout & catalog customization |
+| AWS & Deployment | ⭐⭐⭐⭐ | EC2 hosting, S3, deployment pipelines, server configuration |
+| Site Performance & Cleanup | ⭐⭐⭐⭐ | Unused media/asset auditing, dry-run safe cleanup tooling, DB optimization |
 
 </div>
 
@@ -201,7 +201,7 @@ Working as a web developer building and maintaining websites and eCommerce store
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabsharma00&layout=compact&theme=radical&hide_border=true&bg_color=0F0524&title_color=A78BFA&text_color=E9D8FD" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rishabsharma00&layout=compact&theme=radical&hide_border=true&bg_color=0F0524&title_color=A78BFA&text_color=E9D8FD&cache_seconds=86400" width="49%" />
 
 </div>
 
@@ -210,7 +210,7 @@ Working as a web developer building and maintaining websites and eCommerce store
 ## 🟣 GitHub Trophies
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=rishabsharma00&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7" />
+<img src="https://github-profile-trophy.vercel.app/?username=rishabsharma00&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7&cache_seconds=86400" />
 </div>
 
 ---
@@ -218,7 +218,7 @@ Working as a web developer building and maintaining websites and eCommerce store
 ## 🟣 Contribution Activity
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rishabsharma00&theme=redical&bg_color=0F0524&color=A78BFA&line=7C3AED&point=E9D8FD&hide_border=true" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=rishabsharma00&theme=radical&bg_color=0F0524&color=A78BFA&line=7C3AED&point=E9D8FD&hide_border=true" width="100%" />
 </div>
 
 ---
